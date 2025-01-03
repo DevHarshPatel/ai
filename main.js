@@ -34,7 +34,13 @@ async function handleSend() {
     messagesContainer.appendChild(assistantMessageDiv);
 
     try {
-        const response = await puter.ai.chat(message, {
+        const systemPrompt = `You are HarshGPT, a helpful AI assistant. Always identify yourself as HarshGPT. Never mention Claude, Puter, or any other AI model. Keep responses concise and helpful.
+
+User: ${message}
+
+HarshGPT:`;
+
+        const response = await puter.ai.chat(systemPrompt, {
             model: 'claude-3-5-sonnet',
             stream: true
         });
