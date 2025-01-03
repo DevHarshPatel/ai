@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarshGPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>HarshGPT</h1>
+        </div>
+        <div class="messages" id="messages">
+            <div class="message system">
+                <div class="message-content">
+                    Hello! I'm HarshGPT. How can I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <textarea 
+                id="userInput" 
+                placeholder="Send a message..."
+                rows="1"
+                autofocus
+            ></textarea>
+            <button id="sendButton">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="main.js"></script>
+</body>
+</html>
