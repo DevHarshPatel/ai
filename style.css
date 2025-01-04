@@ -48,7 +48,7 @@ body {
 .message {
     display: flex;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .message.user .message-content {
     font-weight: 600;
