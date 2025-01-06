@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #F1EFE8;
-    color: #3D3929;
+    background-color: #f0fdf4;
+    color: #166534;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,13 +27,14 @@ body {
 .chat-header {
     padding: 1rem;
     text-align: center;
-    border-bottom: 1px solid #4e4f608b;
+    border-bottom: 1px solid rgba(22, 163, 74, 0.1);
 }
 
 .chat-header h1 {
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: -0.025em;
+    color: #16a34a;
 }
 
 .messages {
@@ -50,20 +51,23 @@ body {
     padding: 1rem;
     border-radius: 1rem;
 }
+
 .message.user .message-content {
     font-weight: 600;
 }
+
 .message.user {
-    background-color: #ffffff7d;
+    background-color: rgba(22, 163, 74, 0.05);
 }
 
 .message.assistant {
-    background-color: #ffffff7d;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .message.system {
-    background-color: #ffffff7d;
-    color: #3e3c3b;
+    background-color: rgba(22, 163, 74, 0.08);
+    color: #15803d;
 }
 
 .message-content {
@@ -75,7 +79,7 @@ body {
 
 .input-container {
     padding: 1rem;
-    border-top: 1px solid #4e4f605f;
+    border-top: 1px solid rgba(22, 163, 74, 0.1);
     display: flex;
     gap: 0.5rem;
     align-items: flex-end;
@@ -84,10 +88,10 @@ body {
 
 textarea {
     flex: 1;
-    background-color: #ffffff;
-    border: 1px solid #5658697d;
+    background-color: white;
+    border: 1px solid rgba(22, 163, 74, 0.2);
     border-radius: 1rem;
-    color: #582411;
+    color: #166534;
     font-family: inherit;
     font-size: 0.9375rem;
     padding: 0.75rem;
@@ -98,11 +102,12 @@ textarea {
 }
 
 textarea:focus {
-    border-color: #BA5B38;
+    border-color: #16a34a;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.1);
 }
 
 button {
-    background-color: #BA5B38;
+    background-color: #16a34a;
     border: none;
     border-radius: 1rem;
     color: white;
@@ -115,11 +120,11 @@ button {
 }
 
 button:hover {
-    background-color: #e18867;
+    background-color: #15803d;
 }
 
 button:disabled {
-    background-color: #4f442d;
+    background-color: #bbf7d0;
     cursor: not-allowed;
 }
 
@@ -127,7 +132,7 @@ button:disabled {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    border: 2px solid #ECECF1;
+    border: 2px solid #dcfce7;
     border-radius: 50%;
     border-top-color: transparent;
     animation: spin 1s linear infinite;
